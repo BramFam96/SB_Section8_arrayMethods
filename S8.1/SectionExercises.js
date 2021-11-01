@@ -32,14 +32,6 @@ const showFirstAndLast = () => {
         return newArr;
     }
 //4) addKeyValuePair - take an arr of objects and create a new array of key value pairs
-const arrOfObjs = [
-	{ name: 'Elie' },
-	{ name: 'Tim' },
-	{ name: 'Matt' },
-	{ name: 'Colt' },
-	'title',
-	'instructor',
-]
 const addKeyValuePair = (arrOfObjs, key, value) => {
 arrOfObjs.forEach(child => {
 child[key] = value;
