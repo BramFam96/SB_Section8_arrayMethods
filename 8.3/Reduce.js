@@ -27,7 +27,9 @@ for (let char of str) {
 console.log(charFreq)
 //Reduce iterates through an arr and takes a callback like our other methods
 //main diff is reduce's callback accepts an accumulator and a name for our individual value
-//Reduce will update our accumulator when the callback passes'
+//Accumulator will defualt to arr[0] on initialization, but can be pass a init val if we choose
+//Reduce will update our accumulator when the callback passes;
+
 //ie we can reduce for sum, or median
 //we can also reduce into an object -> ie count of letters in a string
 
