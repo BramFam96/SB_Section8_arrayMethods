@@ -12,11 +12,10 @@ const vowelCount = (str) => {
 	const vowelStr = 'aeiou'
 	const strArr = str.split('')
 	return strArr.reduce((vowelCount, nextChar) => {
-		if (vowelStr.indexOf(nextChar.toLowerCase()) !== -1) {
-			vowelCount[nextChar.toLowerCase()]++
-		} else {
-			vowelCount[nextChar.toLowerCase()] = 1
-		}
+		vowelStr.indexOf(nextChar.toLowerCase()) !== -1
+			? vowelCount[nextChar.toLowerCase()]++
+			: (vowelCount[nextChar.toLowerCase()] = 1)
+
 		return vowelCount
 	}, {})
 }
